@@ -1,0 +1,5 @@
+lib_fs = require('fs')
+buffer = lib_fs.readFileSync(process.argv[2])
+string = buffer.toString()
+array = string.split("\n")
+console.log(array.length-1)
